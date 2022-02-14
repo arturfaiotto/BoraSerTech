@@ -1,0 +1,14 @@
+{
+  "name": "aula-01",
+  "version": "0.0.1",
+  "description": "Nosso primeiro pacote node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Artur",
+  "license": "ISC",
+  "dependencies": {
+    "ascii-art": "^2.8.5"
+  }
+}

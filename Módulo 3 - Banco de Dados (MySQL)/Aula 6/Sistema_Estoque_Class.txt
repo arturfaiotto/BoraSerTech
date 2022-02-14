@@ -1,0 +1,25 @@
+CREATE DATABASE sistema_estoque
+DEFAULT CHARACTER SET utf8 
+DEFAULT COLLATE utf8_general_ci;
+
+USE sistema_estoque;
+
+CREATE TABLE Categoria (
+  Id INT NOT NULL AUTO_INCREMENT,  
+  Nome VARCHAR(255) NOT NULL,
+  Ativa CHAR(14) NOT NULL,
+
+  CONSTRAINT PK_Categoria PRIMARY KEY (Id)
+);
+
+CREATE TABLE Produtos (
+  Id INT NOT NULL AUTO_INCREMENT,
+  Descricao VARCHAR(255) NOT NULL,
+  Preco DECIMAL(6,2) NOT NULL,
+  URL_imagem VARCHAR(255),
+  Id_categoria INT,
+
+  CONSTRAINT PK_Produtos PRIMARY KEY (Id),
+  CONSTRAINT FK_Produtos_Categoria FOREIGN KEY (Id_categoria) REFERENCES Categoria(Id)
+);
+
