@@ -1,0 +1,6 @@
+ENUNCIADO: 
+- Criar 3 arquivos .TXT com algum valor;
+- Criar um 4º arquivo com o conteúdo dos 3 arquivos;
+
+BONUS:
+- Remover os 3 primeiros arquivos e manter somente o arquivo 4 (unsync)
