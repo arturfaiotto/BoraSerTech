@@ -7,7 +7,7 @@ console.log(`A data de HOJE é: \n
     )}. \n\n`  
 );
 
-// EXERCICIO1: Criar e imprimir o dia de ontem
+// EXERCICIO1: Criar e imprimir o dia de ontem.
 const dataOntem = (dataHoje.plus({day: -1}));
 console.log(`A resposta do exercício 1 é: \n
     O dia de ONTEM foi: ${dataOntem.toLocaleString(
@@ -16,7 +16,7 @@ console.log(`A resposta do exercício 1 é: \n
 );
 
 
-// EXERCICIO2: Criar o dia 5 do mês de Julho deste ano às 15h usando o método fromObject
+// EXERCICIO2: Criar o dia 5 do mês de Julho deste ano às 15h usando o método fromObject.
 const cindoDeJulho = (
   DateTime
     .fromObject(
@@ -48,8 +48,5 @@ console.log(`A resposta do exercício 3 é: \n
     ou como dizem por lá ${quinzeAntes.setLocale('de-de').toLocaleString(DateTime.DATE_HUGE)}. 
     \n`
 );
-
-
-
 
 // Para consultar https://moment.github.io/luxon/#/tour
